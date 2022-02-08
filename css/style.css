@@ -3,7 +3,6 @@ Colors used:
 Primary Color (Honey Orange): #f7ba7b;
 Secondary Color (Green): #489c79;
 */
-*
 body {background-color: lightgrey; }
 body {
   font-family: 'Roboto Slab', serif;
@@ -31,14 +30,15 @@ a:focus {
   background-color: #ff7f50;
   color: #008037;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8;
-  text-decoration: none;
 }
 .button.contact {
   background-color: transparent;
@@ -62,7 +62,10 @@ a {
 }
 /* Layout Styling */
 .container {
-  padding: 0 15px;
+  padding: 0px 30px;
+}
+.container2 {
+  padding: 20px 30px;
 }
 header {
   background-color: #ffe4c4;
@@ -76,7 +79,7 @@ header {
    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 selector {
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 1000 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
 selector {
   position: relative;
@@ -100,7 +103,9 @@ selector {
   text-align: center; /* Centers text */
 }
 #hero h2 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  margin: 99.8px;
+  padding: 1.10em 0; /* Centers text */
 }
 .logo {
   max-width: 250px;
@@ -120,18 +125,27 @@ nav > ul > li > a {
 }
 #hero {
   background-color: #ffe4c4;
-}
-#hero h2 {
-  margin: 0;
-  padding: 1.10em 0;
+  text-align: center;
 }
 main {
-  padding-top: 10px;
+  padding-top: 99.8px;
 }
 #my-link {
   padding-bottom: 20px;
 }
 #work {
+  text-align: center;
+}
+#work2 {
+  text-align: center;
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 20px 0px;
+  text-align: center;
+  margin: 0px;
+  position: static;
+}
+#project {
   text-align: center;
 }
 #h4 {
@@ -144,4 +158,71 @@ footer {
    text-align: left;
    margin: 10px;
    position: static;
+   padding-top: 100px;
+}
+/* Media Q Styling */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+#hero span { /*might have to delete, for making text appear in two lines but already did*/
+  display: block;
+}
+.col-md-6 { /*The col is what tells us this is for columns, the md stands for medium devices (screen sizes), and the 6 is for the 6-column span we want this column to occupy.*/
+  width: 50%;
+}
+.col-md-7 {
+  width: 58.33%;
+}
+.col-md-5 {
+  width: 41.66%;
+}
+.col-lg-6 {
+  width: 50%;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+.col-lg-5 {
+  width: 41.66%;
+}
+[class*="col-"] {
+  float: right;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;/*might have to delete, moved footer around, can change class to row to fix, did on index.*/
+  margin-right: auto;
+}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
 }
