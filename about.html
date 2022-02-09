@@ -7,22 +7,19 @@
       <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-    <body>
-      <header>
-        <div class="container">
-          <img src="img/Gary/Gary Strong-2.png" alt="Logo" style="width:200px;">
-          <nav>
-            <ul class="navigation"
-        <div id="my-link">
-          <nav>
-            <ul>
-              <li><a href="index.html" class="my-link">Home</a></li>
-              <li><a href="quadrant.html" class="my-link">Work</a></li>
-              <li><a href="about.html" class="my-link">About</a></li>
-              <li><a href="#contact" class="my-link">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+      <body>
+            <header>
+                  <div class="container">
+                    <img src="img/Gary/Gary Strong-2.png" alt="Logo" style="width:200px;">
+                    <nav>
+                      <ul>
+                        <li><a href="#index.html" class="my-link">Home</a></li>
+                        <li><a href="quadrant.html" class="my-link">Work</a></li>
+                        <li><a href="about.html" class="my-link">About</a></li>
+                        <li><a href="#contact" class="my-link">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
         <div id="hero">
           <div class="container">
         <h1>
@@ -37,7 +34,7 @@
           </picture>
         </div>
           <div class="container">
-            <div>
+            <div id="work" class="row">
               <h3> My story</h3>
             </div>
               <p>Hi, my name is Gary and I am a User Experience Designer. I currently attend the University of Southern California as a business student in the MBV program at the Business School of Marshall with an expected graduation date of May 2022.
@@ -46,17 +43,20 @@
 
                 In my free time, I enjoy spending time with my dog, working my way through new recipes I find online, and traveling to see new places.
               </p>
-          </div>
+              <div class="container2">
+              <a href="files/Garystrongresume.pdf" target="_blank" class="button" download>Download my resume</a>
+              </div>
         </div>
       </div>
-        <div class="container">
+        <div id= "skills" class="container">
+        <div>
           <h3>Skills & Tools</h3>
         </div>
-        <div class="container">
+        <div id="skills" class="column col-md-6">
           <h4>Skills</h4>
             <ul>
               <li>Research</li>
-              <li>User flows</li>
+              <li>HTML, CSS, JavaScript basics</li>
               <li>Wireframing</li>
               <li>Prototyping</li>
               <li>Visual design</li>
@@ -64,19 +64,19 @@
               <li>Style guides</li>
             </ul>
         </div>
-        <div class="container">
+        <div id="tools" class="column col-md-6">
           <h4>Tools</h4>
             <ul>
               <li>Adobe XD</li>
+              <li>Adobe Audition</li>
               <li>Figma</li>
               <li>Sketch</li>
               <li>Invision</li>
               <li>Atom</li>
+              <li>GitHub</li>
             </ul>
         </div>
-        <div class="container">
-          <a href="files/Garystrongresume.pdf" target="_blank" class="button" download>Download my resume</a>
-        </div>
+      </div>
       </main>
       <footer id="contact">
         <div class="container">
@@ -85,26 +85,27 @@
         </p>
         <div>
           <p> Prefer to email?
-          <a href="gary.strong21@gmail.com" class="button contact">Email me</a>
+          <a href="mailto:gary.strong21@gmail.com" class="button contact">Email me</a>
         </div>
-        <div>
+        <nav id="sociallinks">
                 <ul>
                   <li>
                     <a href="https://www.behance.net" target="_blank">
-                      <img src="img/logo/behance_icon.png" style="width:30px;">
+                      <img src="img/logo/behance_icon.png" style="width:41px;">
                     </a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/garysstrong/" target="_blank">
-                      <img src="img/logo/linkedin_icon.png" style="width:25px;">
+                      <img src="img/logo/linkedin_icon.png" style="width:37px;">
                     </a>
                   </li>
                 </ul>
-          </div>
+          </nav>
         <div>
           <p>Copyright Gary Strong 2021</p>
+        </div>
         </div>
       </footer>
     </body>
   </head>
-</html>
+  </html>

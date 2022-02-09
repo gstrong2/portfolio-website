@@ -62,11 +62,12 @@ a {
 }
 /* Layout Styling */
 .container {
-  padding: 0px 30px;
+  padding: 0px 15px;
 }
 .container2 {
-  padding: 20px 30px;
+  text-align: center;
 }
+
 header {
   background-color: #ffe4c4;
    text-align: center;
@@ -78,24 +79,6 @@ header {
    moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
-selector {
-  margin: 1000 auto; /* No spacing to top and bottom and auto spacing to left and right */
-}
-selector {
-  position: relative;
-}
-selector {
-  float: right;
-}
-selector {
-  width: 1200px;
-}
-selector {
-  width: 80%; /*can use this or px above, delete one and use other */
-}
-.container {
-  max-width: 1200px;
-}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
@@ -104,7 +87,7 @@ selector {
 }
 #hero h2 {
   text-align: center;
-  margin: 99.8px;
+  margin: 0px;
   padding: 1.10em 0; /* Centers text */
 }
 .logo {
@@ -116,16 +99,21 @@ nav > ul {
 }
 nav > ul > li {/* how to move navs on header to one line */
   display: inline-block;
+  list-style-type: none
 }
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #008037;
+  list-style-type: none
 }
 #hero {
   background-color: #ffe4c4;
   text-align: center;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%
 }
 main {
   padding-top: 99.8px;
@@ -135,15 +123,31 @@ main {
 }
 #work {
   text-align: center;
+  width: 100%;
 }
 #work2 {
   text-align: center;
   background-color: #ffe4c4;
+  width: 100%;
+}
+#tools ul {
   text-align: center;
-  padding: 20px 0px;
+}
+#tools {
   text-align: center;
-  margin: 0px;
-  position: static;
+}
+#skills {
+  text-align: center;
+}
+#skills ul {
+  text-align: center;
+}
+#contact {
+  text-align: center;
+  background-color: #lightgrey;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%
 }
 #project {
   text-align: center;
@@ -166,16 +170,6 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 }
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
 header {
   text-align: unset;
   padding: 20px 0 13px;
@@ -191,14 +185,25 @@ nav {
 .col-md-6 { /*The col is what tells us this is for columns, the md stands for medium devices (screen sizes), and the 6 is for the 6-column span we want this column to occupy.*/
   width: 50%;
 }
-.col-md-7 {
-  width: 58.33%;
+[class*="col-"] {
+  float: left;
 }
-.col-md-5 {
-  width: 41.66%;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.col-lg-6 {
-  width: 50%;
+#sociallinks {
+  display: inline-block;
+  width: 100%;
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+* {
+  box-sizing: border-box;
 }
 .col-lg-7 {
   width: 58.33%;
@@ -206,21 +211,20 @@ nav {
 .col-lg-5 {
   width: 41.66%;
 }
-[class*="col-"] {
-  float: right;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-* {
-  box-sizing: border-box;
-}
 .container {
   max-width: 1200px;
   margin-left: auto;/*might have to delete, moved footer around, can change class to row to fix, did on index.*/
   margin-right: auto;
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+.imgwrapper,
+.deswrapper {
+  padding: 10px;
 }
 @keyframes color-change {
   from {fill: #edc655;}
