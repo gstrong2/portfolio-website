@@ -227,23 +227,23 @@ X-large devices (1440px or larger)
 }
 @keyframes color-change {
   0% {fill: #edc655;}
- 50% {fill: #fcffad;}
- 100% {fill: #f76414;}
+ 50% {fill: #7ed597;}
+ 100% {fill: #e2b808;}
 }
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 @keyframes cloud-move {
   from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  to {transform: translate(300px,150px);}
 }
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  animation: 10s cloud-move infinite alternate linear;
 }
 @keyframes cloud-move-reverse {
   from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  to {transform: translate(10px, 448px);}
 }
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 20s cloud-move-reverse infinite alternate linear;
 }
