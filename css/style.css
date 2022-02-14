@@ -70,7 +70,6 @@ a {
 
 header {
   background-color: lightgrey;
-   text-align: center;
    padding: 0px 0px;
    text-align: center;
    position: fixed;
@@ -89,15 +88,12 @@ header {
   padding: 1.10em 0; /* Centers text */
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {/* how to move navs on header to one line */
-  display: inline-block;
-  list-style-type: none
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -163,15 +159,56 @@ footer {
    position: static;
    padding-top: 100px;
 }
+.navtoggle li:not(:last-child) { /*hide nav bar*/
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #111111;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /* Media Q Styling */
+/* ==============================
+Small devices (smaller than 640px)
+================================= */
+@media only screen and (max-width: 640px) {
+.GaryStrong-2.png {
+  width: 100%
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 }
+nav > ul > li {/* how to move navs on header to one line */
+  display: inline-block;
+  list-style-type: none
+}
 header {
   text-align: unset;
   padding: 20px 0 13px;
+}
+nav > ul {
+  margin: 1em 0;
 }
 nav {
     width: auto;
@@ -196,6 +233,12 @@ nav {
   display: inline-block;
   width: 100%;
 }
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -206,12 +249,14 @@ Large devices (1024px or larger)
 }
 .col-lg-7 {
   width: 58.33%;
+  min-width: 641px;
 }
 .col-lg-5 {
   width: 41.66%;
 }
 .container {
   max-width: 1200px;
+  min-width: 641px;
   margin-left: auto;/*might have to delete, moved footer around, can change class to row to fix, did on index.*/
   margin-right: auto;
 }
