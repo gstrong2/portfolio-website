@@ -168,7 +168,6 @@ main {
   padding: 10px 0;
   display: inline-block;
   width: 100%
-  onclick="menuToggle()"
 }
 #project {
   text-align: center;
