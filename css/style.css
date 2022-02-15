@@ -58,6 +58,13 @@ a {
 #my-link {
   color: orange;
 }
+header {
+  background-color: lightgrey;
+   padding: 0px 0px;
+   display: inline-block;
+   position: fixed;
+   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+   width: 100%;
 }
 .my-link {
   color: green;
@@ -69,15 +76,6 @@ a {
 .container2 {
   text-align: center;
 }
-
-header {
-  background-color: lightgrey;
-   padding: 0px 0px;
-   display: inline-block;
-   position: fixed;
-   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-   width: 100%;
-}
 nav > ul > li {
   display: inline-block;
 }
@@ -87,14 +85,8 @@ nav > ul > li {
 .logo {
   max-width: 250px;
 }
-.navtoggle li:not(:last-child) {
-  display: none;
-}
 .navtoggle li:last-child {
   display: none;
-}
-.navtoggle.responsive li  {
-  display: block;
 }
 .navtoggle.responsive nav {
   padding: 24px 0 0;
@@ -120,6 +112,18 @@ nav > ul > li > a {
   color: #008037;
   list-style-type: none
 }
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 24px;
+    padding-right: 10px;
+    color: #111111;
+}
+
 main {
   padding-top: 130px;
   padding-bottom: 20px;
@@ -225,17 +229,14 @@ header {
 nav > ul > li {
   display: inline-block;
 }
+.navtoggle li:last-child {
+  display: none;
+}
 .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
 }
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
+.navtoggle.responsive li {
+  border-top: 0;
 }
 nav > ul {
   margin: 1em 0;
@@ -268,8 +269,10 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
-* {
-  box-sizing: border-box;
+.navtoggle {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .col-lg-7 {
   width: 58.33%;
@@ -281,6 +284,12 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;/*might have to delete, moved footer around, can change class to row to fix, did on index.*/
   margin-right: auto;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
 }
 /* ==============================
 X-large devices (1440px or larger)
