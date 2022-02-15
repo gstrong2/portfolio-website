@@ -46,6 +46,7 @@ a:focus {
   color: #008037;
   text-transform: uppercase;
   border: 2px solid #008037;
+  onclick="menuToggle()"
 }
 .button.contact:hover {
   background-color: #ff7f50;
