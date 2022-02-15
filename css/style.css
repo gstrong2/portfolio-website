@@ -92,9 +92,13 @@ nav > ul > li {
 .navtoggle li:last-child {
   display: none;
 }
+.navtoggle.responsive li  {
+  display: block;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -102,6 +106,10 @@ nav > ul > li > a {
   font-weight: 700;
   color: #008037;
   list-style-type: none
+}
+main {
+  padding-top: 130px;
+  padding-bottom: 20px;
 }
 #hero h1 {
   text-align: center; /* Centers text */
@@ -117,10 +125,6 @@ nav > ul > li > a {
   padding: 10px 0;
   display: inline-block;
   width: 100%
-}
-main {
-  padding-top: 130px;
-  padding-bottom: 20px;
 }
 #my-link {
   padding-bottom: 20px;
@@ -152,6 +156,7 @@ main {
   padding: 10px 0;
   display: inline-block;
   width: 100%
+  onclick="menuToggle()"
 }
 #project {
   text-align: center;
@@ -219,6 +224,21 @@ nav > ul > li {
   right: 0;
   top: 2px;
   font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+nav > ul {
+  margin: 1em 0;
 }
 nav {
     width: auto;
