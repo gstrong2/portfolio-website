@@ -29,7 +29,7 @@ a:focus {
 .button {
   display: inline-block;
   background-color: #ff7f50;
-  color: #008037;
+  color: #00441D;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -155,7 +155,6 @@ nav > ul > li {
 }
 #work2 {
   text-align: center;
-  background-color: #ffe4c4;
   width: 100%;
 }
 #tools ul {
@@ -172,7 +171,7 @@ nav > ul > li {
 }
 #contact {
   text-align: center;
-  background-color: #lightgrey;
+  background-color: lightgrey;
   padding: 10px 0;
   display: inline-block;
   width: 100%
@@ -181,6 +180,12 @@ nav > ul > li {
   text-align: center;
 }
 #h4 {
+  text-align: center
+}
+#h5 {
+  text-align: center
+}
+#h6 {
   text-align: center
 }
 #sociallinks {
@@ -204,9 +209,9 @@ footer {
   padding: 10px;
 }
 @keyframes color-change {
-  0% {fill: #edc655;}
- 50% {fill: #7ed597;}
- 100% {fill: #e2b808;}
+  0% {fill : #edc655;}
+ 50% {fill : #7ed597;}
+ 100% {fill : #e2b808;}
 }
 .sun {
   animation: 4s color-change infinite alternate linear;
@@ -263,7 +268,6 @@ Medium devices (640px and larger)
     }
     .row:after {
       content: "";
-      clear:;
       display: table;
     }
 }
